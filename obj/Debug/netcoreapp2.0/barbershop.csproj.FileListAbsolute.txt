@@ -1,0 +1,10 @@
+/Users/andregaines/Projects/GitRepos/barbershop/bin/Debug/netcoreapp2.0/barbershop.deps.json
+/Users/andregaines/Projects/GitRepos/barbershop/bin/Debug/netcoreapp2.0/barbershop.runtimeconfig.json
+/Users/andregaines/Projects/GitRepos/barbershop/bin/Debug/netcoreapp2.0/barbershop.runtimeconfig.dev.json
+/Users/andregaines/Projects/GitRepos/barbershop/bin/Debug/netcoreapp2.0/barbershop.dll
+/Users/andregaines/Projects/GitRepos/barbershop/bin/Debug/netcoreapp2.0/barbershop.pdb
+/Users/andregaines/Projects/GitRepos/barbershop/obj/Debug/netcoreapp2.0/barbershop.csproj.CoreCompileInputs.cache
+/Users/andregaines/Projects/GitRepos/barbershop/obj/Debug/netcoreapp2.0/barbershop.AssemblyInfoInputs.cache
+/Users/andregaines/Projects/GitRepos/barbershop/obj/Debug/netcoreapp2.0/barbershop.AssemblyInfo.cs
+/Users/andregaines/Projects/GitRepos/barbershop/obj/Debug/netcoreapp2.0/barbershop.dll
+/Users/andregaines/Projects/GitRepos/barbershop/obj/Debug/netcoreapp2.0/barbershop.pdb
