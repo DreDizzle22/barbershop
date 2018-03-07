@@ -1,71 +1,593 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - barbershop</title>
+    <!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Barbershop" />
+    <meta name="keywords" content="haircuts, barber, great styles, fades, tapers" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <!-- title -->
+    <title>My Barbershop</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="~/css/font-awesome/css/font-awesome.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/css/bootstrap/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="~/css/animate/animate.css">
+    <!--mignific popup -->
+    <link rel="stylesheet" href="~/css/magnific-popup/magnific-popup.css">
+    <!--owl carousel -->
+    <link rel="stylesheet" href="~/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl-carousel/owl.theme.default.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <!--responsive css-->
+    <link rel="stylesheet" href="~/css/responsive.css">
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">barbershop</a>
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+    <!--Navigation-->
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="barbershop-nav-wrapper">
+
+                    <div class="nav-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barbershop-menu">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="barbershop-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#services">Services</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <li><a class="smooth-scroll" href="#work">Work</a></li>
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <li><a class="smooth-scroll" href="#testimonials">Testimonials</a></li>
+                            <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                            <li><a class="smooth-scroll" href="#contact-left">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div id="home-cover" class="bg-parallex animated fadeIn">
+            <div id="home-content-box" class="text-center">
+                <div id="home-content-box-inner">
+                    <div id="home-heading" class="animated zoomIn">
+                        <h3> My Barbershop<br>Great Haircuts Start Here!</h3>
+                    </div>
+                    <div id="home-btn" class="animated zoomIn">
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="#work" role="button" title="View Our Work"> View Our Work</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - barbershop</p>
-        </footer>
-    </div>
+    </section>
+    <!-- Services -->
+    <section id="services">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                <h3>Services</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-scissors fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Haircuts </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-male fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Men</h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-child fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Children</h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-female fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Women </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-laptop fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Laptop </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon">
+                                <i class="fa fa-tablet fa-3x"></i>
+                            </div>
+                            <div class="service-item-title">
+                                <h3> Tablet </h3>
+                            </div>
+                            <div class="service-item-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+        <!-- About right side with diagonal BG parallax -->
+        <div id="about-bg-diagonal" class="bg-parallex"></div>
+        <!-- About left side with content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about-content-box">
+                        <div id="about-content-box-outer">
+                            <div id="about-content-box-inner">
+                                <div class="content-box">
+                                    <div class="content-title wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                                        <h3>About</h3>
+                                        <div class="content-title-underline"></div>
+                                    </div>
+                                    <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo omnis reprehenderit
+                                            nam facere. Ad laborum numquam deleniti dignissimos similique ipsum nisi a aperiam recusandae autem?
+                                            Eos quos accusamus maiores.
+                                        </p>
+                                    </div>
+                                    <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                                        <a class="btn-lg btn-general btn-blue smooth-scroll" href="#work" role="button">Our Work</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Work -->
+    <section id="work">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                <h3>Our Work</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container-fluid">
+                <div class="row wow no-gutters animated fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/afro.jpg" title="Work Description Goes Here">
+                                <img src="~/img/styles/afro.jpg" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/style1.jfif" title="Work Description Goes Here">
+                                <img src="~/img/styles/style1.jfif" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/style2.jfif" title="Work Description Goes Here">
+                                <img src="~/img/styles/style2.jfif" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/style3.jfif" title="Work Description Goes Here">
+                                <img src="~/img/styles/style3.jfif" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/style4.jfif" title="Work Description Goes Here">
+                                <img src="~/img/styles/style4.jfif" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/style5.jfif" title="Work Description Goes Here">
+                                <img src="~/img/styles/style5.jfif" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/afro.jpg" title="Work Description Goes Here">
+                                <img src="~/img/styles/afro.jpg" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="~/img/styles/afro.jpg" title="Work Description Goes Here">
+                                <img src="~/img/styles/afro.jpg" class="img-responsive" alt="Work">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section id="team">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                <h3>Our Team</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="col-md-12">
+                        <div id="team-members" class="owl-carousel owl-theme">
+                            <div class="team-member">
+                                <img src="~/img/team/member1.jfif" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">
+                                        Daniel Watrous
+                                    </h4>
+                                    <h4 class="team-member-designation">Owner</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="~/img/team/member2.jfif" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">
+                                        Daniel Smith
+                                    </h4>
+                                    <h4 class="team-member-designation">Barber</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="~/img/team/member1.jfif" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">
+                                        John Doe
+                                    </h4>
+                                    <h4 class="team-member-designation">Barber</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="~/img/team/member2.jfif" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">
+                                        Lauren Smith
+                                    </h4>
+                                    <h4 class="team-member-designation">Barber</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <img src="~/img/team/member1.jfif" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">
+                                        Andre Gaines
+                                    </h4>
+                                    <h4 class="team-member-designation">Barber</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div id="testimonials-cover" class="bg-parallex">
+            <div class="content-box">
+                <div class="content-title content-title-white wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                    <h3>What Our Customers Say</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+                <div class="container">
+                    <div class="row wow animated bounceInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                        <div class="col-md-12">
+                            <div id="customers-testimonials" class="text-center owl-carousel owl-theme">
+                                <div class="testimonial">
+                                    <img src="~/img/testimonial/testimonial1.jfif" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur rem pariatur reprehenderit obcaecati placeat consequatur! Cum, deleniti, libero, iste rem maiores doloremque temporibus minima illum laboriosam omnis rerum dolorem.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Daniel Watrous</strong>
+                                            <span>CEO & Founder - Google</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="~/img/testimonial/testimonial2.jfif" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur rem pariatur reprehenderit obcaecati placeat consequatur! Cum, deleniti, libero, iste rem maiores doloremque temporibus minima illum laboriosam omnis rerum dolorem.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>Jack Wilson</strong>
+                                            <span>CEO & Founder - Yahoo</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <img src="~/img/testimonial/testimonial3.jfif" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequuntur rem pariatur reprehenderit obcaecati placeat consequatur! Cum, deleniti, libero, iste rem maiores doloremque temporibus minima illum laboriosam omnis rerum dolorem.</p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p>
+                                            <strong>John Smith</strong>
+                                            <span>CEO & Founder - Amazon</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Our Pricing</h3>
+                <div class="content-title-underline"></div>
+            </div>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box text-center">
+                            <h4 class="pricing-title">Men's Haircuts</h4>
+                            <h3 class="pricing-value">49<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>500 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>5GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p> 5GB BANDWIDTH</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a class="btn btn-lg btn-general btn-blue" href="#" role="button">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box pricing-box-lg text-center">
+                            <h4 class="pricing-title">Women's Haircuts</h4>
+                            <h3 class="pricing-value">49<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>500 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>5GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p> 5GB BANDWIDTH</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a class="btn btn-lg btn-general btn-white" href="#" role="button">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box text-center">
+                            <h4 class="pricing-title">Kid's Haircuts</h4>
+                            <h3 class="pricing-value">49<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>500 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>5GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p> 5GB BANDWIDTH</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn">
+                                <a class="btn btn-lg btn-general btn-blue" href="#" role="button">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="contact-left">
+                        <h3>Barbershop</h3>
+                        <p>We believe in great quality haircuts to not only <strong>Look</strong> Good but <strong>Feel</strong> Good as well</p>
+                    </div>
+                    <div id="contact-info">
+                        <address>
+                            <strong>Address</strong><br>
+                            <p>221 Jockey Hollow, Suite 699<br>
+                            Smithtown, NY 11787</p>
+                        </address>
+                        <div id="phone-email">
+                            <p>
+                                <strong>Phone Number:</strong><span>9999999</span><br>
+                                <strong>Email:</strong><span>barber@barbershop.com</span><br>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-icon icon-white"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="social-icon icon-white"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon icon-white"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="#" class="social-icon icon-white"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact-right">
+                        <h3>Contact Us</h3>
+                        <form action="#">
+                            <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                            <input type="text" name="email" placeholder="Email Address" class="form-control">
+                            <textarea rows="5" placeholder="Message..." class="form-control"></textarea>
+                            <div id="send-btn">
+                                <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyrights">
+                            <p>Copyrights &copy; 2018 All Rights Reserved By Barbershop Inc.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden-sm">
+                        <div id="footer-menu">
+                            <ul>
+                                <li><a class="smooth-scroll" href="#home">Home</a>/</li>
+                                <li><a class="smooth-scroll" href="#services">Services</a>/</li>
+                                <li><a class="smooth-scroll" href="#work">Work</a>/</li>
+                                <li><a class="smooth-scroll" href="#team">Team</a>/</li>
+                                <li><a class="smooth-scroll" href="#testimonials">Testimonials</a>/</li>
+                                <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="Home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </footer>
+    <!-- jQuery -->
+    <script src="~/js/jquery.js"></script>
+    <!-- bootstrap JS -->
+    <script src="~/js/bootstrap/bootstrap.min.js"></script>
+    <!-- WOW JS -->
+    <script src="~/js/wow/wow.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="~/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- owl carousel -->
+    <script src="~/js/owl-carousel/owl.carousel.min.js"></script>
+    <!--easing-->
+    <script src="~/js/easing/jquery.easing.1.3.js"></script>
+    <!-- custom JS -->
+    <script src="~/js/custom.js"></script>
+    @RenderBody()
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
